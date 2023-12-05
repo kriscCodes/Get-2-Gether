@@ -1,0 +1,107 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #F8F9FA;
+}
+
+
+#home-title{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.event-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.event-card {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #EAEAEA;
+    
+}
+
+.event-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.event-card-solo:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.event-card-solo {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #EAEAEA;
+    width: 62%; 
+}
+
+.card-link {
+    display: block; /* or 'flex' depending on your layout */
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: inherit; /* Optional: Keeps the text color consistent */
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+}
+
+.img-card {
+    width: 66%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+.card-content {
+    padding: 15px;    
+}
+
+#rsvp-btn{
+    margin-top: 1%;
+    width: 5%;
+}
+
+/* #user-btn{
+    margin-top: .5%;
+    width: 2.5%
+} */
+
+#url-link {
+    text-decoration: underline;
+}
+
+.container-fluid-solo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+.home-btn {
+    width:150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+}
