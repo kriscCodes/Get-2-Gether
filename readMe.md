@@ -11,14 +11,14 @@ Get2Gether is a Flask-based web application that simplifies the process of disco
 
 
 ## Usage
-- **Home Page**: Visit `https://get2gether-0-a5cf11a670fb.herokuapp.com/` to access the main interface.
+- **Sign Up Page**: Visit `https://get2gether-4a4958b07df7.herokuapp.com/` to access the main interface.
 - **Sign Up/Login**: Use the authentication system for a personalized experience.
 - **Explore Events**: Browse through the listed events, each with a unique link providing more details.
 - **RSVP**: Choose to attend events and keep track of your choices.
 - **View User Profiles**: Check out what events other users are attending through their dynamic profile links.
 
 ## API Integration
-Get2Gether integrates with the New-York-Events API for event data, enhancing the application's functionality and user experience. Visit the API using this link ``
+Get2Gether integrates with the New-York-Events API for event data, enhancing the application's functionality and user experience. Visit the API using this link `https://new-york-events-66105853a688.herokuapp.com/`
 
 
 
