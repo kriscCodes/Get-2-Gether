@@ -32,7 +32,7 @@ def create_tables():
   with app.app_context():
     db.create_all()
 
-apiUrl = "https://intense-sands-73414-6ea2a84a5a5c.herokuapp.com//get-all-events"
+apiUrl = "https://new-york-events-66105853a688.herokuapp.com/get-all-events"
 
 @app.route("/")
 def home():
@@ -77,7 +77,7 @@ async def user(username):
 @app.route("/event/<name>", methods=["POST", "GET"])
 async def event(name):
     if session["logged_in"]:
-        url = "https://intense-sands-73414-6ea2a84a5a5c.herokuapp.com/get-event/" + name
+        url = "https://new-york-events-66105853a688.herokuapp.com/get-event/" + name
         data = await fetch(url)
         user_id = session.get("user_id")
         user = Users.query.get(user_id)
