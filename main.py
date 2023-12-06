@@ -50,7 +50,6 @@ async def apphome():
        user_id = session.get("user_id")
        user = Users.query.get(user_id)
        content = await fetch(apiUrl)
-       print(content)
        return render_template("apphome.html", userInfo=user, data=content)
     else: 
       return redirect(url_for("login"))
